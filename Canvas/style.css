@@ -1,0 +1,43 @@
+body::before{
+    content: "";
+    display: block;
+    height: 65px;
+    background-color: #0d6efd;
+}
+.workspace{
+    background-image: url(./img/bg-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.workspace .fs-2{
+    background:#8a959f80;
+    width: 50%;
+}
+.chat{
+    border-radius: 50%;
+    position: fixed;
+    bottom: 55px;
+    right: 15px;
+    animation: spin 3s linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* Media Query */
+@media screen and (max-width:991px) {
+    .call{
+        width: 45%;
+        padding-left: 5px;
+        border-radius: 8px;
+    }
+}
+@media screen and (max-width:767px) {
+    .workspace .fs-2{
+        width: 100%;
+    }
+}
